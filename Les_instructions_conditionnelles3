@@ -1,0 +1,86 @@
+# Travail# Excercice 1
+#moyenne >= 10
+#nomFille == 'Alice'
+#ageIndividu < 18
+#moyenneBac >= 12
+
+# Excercice 2.1
+def bac(prenom, nom, moyenne):
+    if moyenne >= 10:
+        print(prenom, nom, "a obtenu son bac, Félicitations!")
+        
+# Excercice 2.2
+def bac2(prenom, nom, moyenne):
+    if moyenne >= 10:
+        print(prenom, nom, "a obtenu son bac, Félicitations!")
+    else:
+        print(prénom, nom, "n'a pas obtenu son bac!")
+
+# Exercice 3
+
+def maximum(a,b):
+    if a>= b:
+        return a
+    else:
+        return b
+    
+# Exercice 3.2
+
+def minimum(a,b):
+    if a <= b:
+        return a
+    else:
+        return b
+    
+# Exercice 3.3
+
+def valeur_absolue(x):
+    if x >= 0:
+        return x
+    else:
+        return -1 * x
+    
+# Exercice 4
+
+def bowling(boule1, boule2):
+    """
+    Description de la fonction : Affiche a l'écran les performances d'un joueur de bowling
+    boule1 (int) : nombre de quilles renversées avec la première boule
+    boule2 (int) : nombre de quilles renversées avec la deuxième boule
+    préconditions sur les entrées : boule1 + boule2 <= 10
+    """
+    if boule == 10:
+        print("X")
+    elif boule1 + boule2 == 10:
+        print("/")
+    else:
+        print(boule1+boule2)
+        
+# Exercice 5
+
+def croissant(a,b,c):
+    if a <= b:
+        if b <= c:
+            résultat = True
+        else:
+            résultat = False
+    else:
+        résultat = False
+    return résultat
+
+# Exercice 6
+
+def est_bissextile(annee):
+    if annee % 4 != 0:
+        return False
+    else:
+        if annee % 100 == 0:
+            if annee % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True 
+
+        
+        
