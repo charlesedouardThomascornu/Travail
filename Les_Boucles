@@ -1,0 +1,27 @@
+# Exercice 1
+# ('----------------------') sert a coupé les lignes pour une meilleure lisibilité
+
+for i in range(2,9):
+    print(i)
+print('------------------------------')
+    
+for i in range(0,26,4):
+    print(i)
+print('-------------------------------')
+   
+for lettre in "informatique":
+    print("on affiche la lettre", lettre)
+print('-------------------------------')
+    
+mot = "informatique"
+
+for i in range (len(mot)):
+    print(i)
+print('--------------------------------')
+
+maChaine = "informatique"
+
+for i in range(len(maChaine)):
+    print( i + 1 )
+    
+# Exercice 2
