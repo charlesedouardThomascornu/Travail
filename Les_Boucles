@@ -25,3 +25,18 @@ for i in range(len(maChaine)):
     print( i + 1 )
     
 # Exercice 2
+
+for i in range(10):
+    print('Pour progresser en programmation, la pratique est le plus important')
+print('---------------------------------------')
+
+# Exercice 3
+
+for i in range(0,77,7):
+    print(i)
+print('--------------------------------')
+
+# Exercice 3.1
+
+for i in range(0,77,7):
+    print(i)
