@@ -55,4 +55,52 @@ print('---------------------------------')
 
 # Exercice 4
 
+def nombreCaracteres(chaine):
+    compteur = 0
+    for Caractere in chaine:
+        compteur += 1
+    return compteur
+       
+# Exercice 5
+
+def compterOccurence(chaine,c):
+    compteur = 0
+    for Lettre in chaine:
+        if Lettre == c:
+            compteur += 1
+    return compteur
+
+# Excercice 6
+
+def rechercheOccurence(chaine, c):
+    for lettre in chaine:
+        if lettre == c:
+            return True
+    return False
+    
+
+#Exécuter à la main (sans ordinateur) l'appel rechercheOccurence("Stallmann", "a"). Combien de fois "êtes-vous entré" dans la boucle for ?
+#Réponse : 2 fois
+#Exécuter à la main (sans ordinateur) l'appel rechercheOccurence("Richard", "b"). Combien de fois "êtes-vous entré" dans la boucle for ?
+#Réponse : 0 fois
+#Pourquoi n'obtient-on pas la même valeur dans les 2 questions précédentes (préciser quelle instruction du code de la fonction est responsable de cette différence)
+#Réponse : nous n'obtenons pas les mêmes valeurs car il y a deux a dans Stallmann et il n'y a pas de b dans Richard 
+#l'instruction du code de la fonction qui est responsable de cette différence est if lettre == c:
+
+# Suite de l'exo 6
+
+def rechercheIndice(chaine,c):
+    compteur = 0
+    for Lettre in chaine:
+        if Lettre == c:
+            compteur += 1
+    return compteur
+"""
+Description de la fonction : renvoie l'indice de la première occurence du caractère c dans chaine
+chaine (str) : chaine de caractère dans laquelle la recherche s'effectue
+c (str) : caractère recherché
+return (int ou None) : indice du caractère c danc chaine (None si le caractère c n'apparaît pas dans chaine)
+""" 
+
+# Exercice 7
 
