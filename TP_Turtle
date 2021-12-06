@@ -1,0 +1,44 @@
+# Exo 1
+
+import turtle
+##turtle.forward(100)
+##turtle.left(90)
+##turtle.forward(100)
+##turtle.left(90)
+##turtle.forward(100)
+##turtle.left(90)
+##turtle.forward(100)
+##turtle.left(90)
+
+# Exo 2
+
+for Turtle in range (4):
+   turtle.forward(100)
+   turtle.left(90)
+    
+# Exo 3
+
+def carre(pas):
+    """
+    Description de la fonction : Déplace la tortue de sorte qu'elle dessine un carré
+                                 et revienne au point de départ (même position et orientation)
+    pas(int) : côté du carré
+    return : None
+    """
+    for Turtle in range (4):
+        turtle.forward(pas)
+        turtle.left(90)
+        
+# Exo 4
+
+
+def carreEmboite(cote,nb):
+    """
+    Description de la fonction : Déplace la tortue de sorte qu'elle dessine une succession
+                                de carrés emboîtés régulièrement espacés
+    pas(int) : côté du plus petit carré
+    nb(int): nombre total de carrés
+    return : None
+    """
+    for i in range():
+        carre()
