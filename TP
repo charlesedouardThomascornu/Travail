@@ -19,7 +19,7 @@ def bowling(boule1, boule2):
 def mollky(score,gain):
     score = score + gain
     if score > 50:
-       score == 25
+       score = 25
     if score == 50:
         print('Victoire!!')
     else:
