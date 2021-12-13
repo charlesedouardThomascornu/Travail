@@ -75,3 +75,23 @@ def ligne2carre(nb,cote,espacement):
         turtle.up()
         turtle.forward(espacement)
         turtle.down()
+        
+# Exo 7
+
+def damier(longueur,hauteur,cote,espacement):
+    """
+    Description de la fonction : Déplace la tortue de sorte qu'elle dessine un damier
+    longueur(int) : nombre de carrés par ligne
+    hauteur(int) : nombre de carrés par colonne
+    cote(int): côté du carré
+    espacement(int) : espacement entre 2 carrés successifs
+    return : none
+    """
+    y = 0
+    for r in range(hauteur):
+        ligne2carre(longueur, cote, espacement)
+        y = y + cote+ espacement
+        turtle.up()
+        turtle.goto(0, y)
+        turtle.down()     
+
