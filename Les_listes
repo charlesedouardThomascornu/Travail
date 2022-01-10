@@ -1,0 +1,45 @@
+#Exo 1
+ma_liste = [4,7,3,4,6,9,13,2]
+
+#Réponse 1): ma_liste[5]
+
+#Réponse 2): len(ma_liste)
+
+#Réponse 3): 6
+
+#Réponse 4): 6
+
+#Réponse 5): Cela renvoie un erreur
+
+#Réponse 6): [7,3,4,6,9,13]
+
+#Réponse 7): Cela remplace le 4 par un 5 dans la liste 
+
+#Réponse 8): Cela supprime le 9 de la liste
+
+#Exo 2
+
+ma_liste2 = ['Alice','Bob','Tom']
+ma_liste2.insert(2,'Marc')
+print(ma_liste2)
+
+#Exo 3
+
+t = []
+for i in range(10):
+    t.append(i**2)
+
+#Réponse 1): On obtient [0,1,4,9,16,25,36,49,64,81]
+    
+#Réponse 2):
+    
+t2 = []
+for i in range(5):
+    t2.append((i*2)**2)
+    
+#Exo 4
+    
+t3 = [0]*10
+
+for i in range(len(t)):
+    t3[i] = 10 - i
