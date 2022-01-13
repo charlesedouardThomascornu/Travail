@@ -43,3 +43,24 @@ t3 = [0]*10
 
 for i in range(len(t)):
     t3[i] = 10 - i
+    
+#Exo 5
+    
+def longueurNomV1(liste_nom) : 
+    liste_longueur=[]
+    for nom in liste_nom:
+        liste_longueur.append(len(nom))
+        
+    print(liste_longueur)
+    
+#Exo 5.1
+
+def longueurNomV2(liste_nom) : 
+    liste_longueur = [0]*len(liste_nom)
+    for i in range(len(liste_nom)):
+        liste_longueur[i] = len(liste_nom[i])
+    return liste_longueur
+
+#Exo 6
+
+
