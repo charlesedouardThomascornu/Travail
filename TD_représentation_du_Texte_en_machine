@@ -1,0 +1,23 @@
+# Exo 1
+
+#1) 0100 1101 = 4D donc elle correspond a la lettre M
+#2) Elle correspond a la lettre m = 6D qui en octet donne: 0110 1101
+#3) 72 = H
+#3)  donc cela correspond a h
+#4) 4D = 77 et 6D = 109 ; 72 = H et 104 = h , on peut donc constater qu'il ajouter 32 a la majuscule pour trouver sa minuscule ( dans tout les cas )
+
+# Exo 2
+
+#1) 41 64 61 20 4C 6F 76 65 6C 61 63 65 ( HÉXADÉCIMAL , ASCII ) = Ada Lovelace ( Réponse vérifiée )
+
+# Exo 3
+
+#1) Cours de N.S.I. = 43 6F 75 72 73 20 64 65 20 4E 2E 53 2E 49 2E  ( exprimé en Héxadécimal ) , ( Réponse Vérifiée )
+#2) Cours de N.S.I. =  0100 0011 0110 1111 0111 0101 0111 0010 0111 0011 0010 0000 0110 0100 0110 0101 0010 0000 0100 1110 0010 1110 0101 0011 0010 1110 0100 1001 0010 1110 ( exprimé en binaire cette fois ci )
+
+# Exo 4
+
+#1) 0101 0010 0010 1110 0010 0000 0101 0011 0111 0100 0110 0001 0110 1100 0110 1100 0110 1101 0110 0001 0110 1110 = 5 2 2 E 2 0 5 3 7 4 6 1  6 C 6 D 6 1 6 E (héxadécimal)
+# 5 2 2 E 2 0 5 3 7 4 6 1  6 C 6 D 6 1 6 E (héxadécimal)= 	R. Stalman
+
+# Exo 5
