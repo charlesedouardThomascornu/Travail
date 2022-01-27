@@ -26,3 +26,13 @@
 #2) 16 octets
 #3) Guido Van Rossum = 57 75 69 64 615 20 56 61 614 20 52 615 73 73 75 613
 #4) Oui car pas d'accent
+
+ex6)
+
+ex7)
+
+73 octets 
+2D et 3 retours à la ligne 
+cr=retour chariot 
+lf=line feed 
+crlf provient de la juxtaposition du sigle de Carriage Return (retour chariot) et de Line Feed (saut de ligne).
