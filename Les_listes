@@ -63,4 +63,19 @@ def longueurNomV2(liste_nom) :
 
 #Exo 6
 
+def affiche_liste(nom_de_liste):
+    for i in nom_de_liste:
+        print(i, end = ' ')
+t = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+
+#Exo 7
+
+liste_entier = [23, 45, 23, 43, 7, 66, 21, 45, 23, 7, 200, 200]
+resultadelaListe = []
+def enlevedoublon(uneliste):
+    for element in uneliste:
+        if element not in resultadelaListe:
+            resultadelaListe.append(element)
+
+    print(resultadelaListe)
 
