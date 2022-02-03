@@ -1,0 +1,27 @@
+# Exo 1
+
+# Bloc1
+n = 100
+k = 0
+while test #manque les deux points + test n'est pas défini
+    test = 2**k < n
+    k = k + 1
+print(k)
+
+# Bloc2
+n = 100
+k = 0
+test = 2**n < n
+while test:
+    test = 2**k > n
+    k = k + 1 # ligne en trop
+print(k)
+
+# Bloc3
+n = 100
+k = 0
+test = 2**0 < n
+while test :
+    test = 2**k < n
+    print(k)
+#Boucle infini le print est mal placé 
