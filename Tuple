@@ -21,3 +21,21 @@ def quatreOperations(a, b):
 monTuple = quatreOperations(8, 2)
 
 # Exo 3
+
+def prefixe(e, t):
+    return (e,) + t
+
+def suffixe(e, t):
+    return t + (e,)
+
+def insere(e, i, t):
+    new_tuple = ()
+    for j in range(i):
+        new_tuple = new_tuple + (t[j],)
+    new_tuple = new_tuple + (e,)
+    for j in range(i, len(t)):
+        new_tuple = new_tuple + (t[j],)
+    return new_tuple 
+    
+# Exo 4
+
