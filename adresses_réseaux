@@ -49,3 +49,7 @@ d) 192.168.16.125 n'appartient pas au même sous-réseau car 192.168.16.125 & 25
 e) 192.168.195.5 appartient au sous-réseau car 192.168.195.5 & 255.255.192.0 = 192.168.192.0 
 f) IP: 192.168.196.0
 Masque: 255.255.192.0
+
+Exo 4)
+
+
