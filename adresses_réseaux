@@ -12,15 +12,40 @@ Exo 2)
 172.16.0.0
 
 1.b)
-255.255.0.0
+172.16.255.255
 
 1.c)
-255**2 = 65 536
+255**2-2 = 65 534
 
 2)
 Le suffixe / 24 signifie que le masque de sous-réseau commence par 24 bits consécutifs de valeur 1 : le reste des bits (donc 8 bits) est à mis à 0.
 Autrement dit, ce masque vaut 11111111.11111111.11111111.00000000 , soit 255.255.255.0.
 Donc le masque est changé:
-ce réseaux peut donc accueillir 256**1 = 256 machines
+
+2.a) 192.168.1.0
+
+2.b) 192.168.1.255
+
+2.c) Ce réseaux peut donc accueillir 256**1-2 = 254 machines
 
 Exo 3)
+
+1.R1)
+IP: 200.67.80.45
+Masque: 255.0.0.0
+
+a) sous-réseau: 200.0.0.0
+adresse de diffusion: 200.255.255.255
+b) CIDR: 200.67.80.45/8
+c) 256**3-2= 16 777 214 machines 
+
+2.R2) 
+IP: 192.168.207.5/18
+
+a) Masque sous-réseau: 255.255.192.0
+b) 2**32-18 = 2**14 = 16 384 adresse IP différentes 
+c) Adresse du sous-réseau: 192.168.192.0
+d) 192.168.16.125 n'appartient pas au même sous-réseau car 192.168.16.125 & 255.255.192.0 = 192.168.0.0
+e) 192.168.195.5 appartient au sous-réseau car 192.168.195.5 & 255.255.192.0 = 192.168.192.0 
+f) IP: 192.168.196.0
+Masque: 255.255.192.0
