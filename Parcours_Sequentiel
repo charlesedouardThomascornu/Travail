@@ -63,3 +63,10 @@ def moyenne(liste):
     paramètre liste (list) : liste non vide d'entiers(int) ou de nombres réels(float)
     Return (int)
     """
+    compteur_de_nombre=0
+    addition=0
+    for i in liste :
+        addition=addition+i
+        compteur_de_nombre=compteur_de_nombre+1
+    moyenne_liste=addition/compteur_de_nombre
+    return moyenne_liste
