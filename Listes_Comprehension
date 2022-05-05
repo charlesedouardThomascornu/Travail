@@ -1,0 +1,8 @@
+liste = [0]*11
+liste2 = []
+for i in range(11):
+    liste2.append(10-i)
+print(liste2)
+
+liste = []
+for lettre in "informatique":
