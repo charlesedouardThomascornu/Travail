@@ -1,0 +1,13 @@
+def recherche_dichotomique(liste, valeur):
+    n = len(liste)
+    trouve = False
+    Gauche = liste[n-1]
+    Droite = liste[0]
+    while Droite >= Gauche and not trouve:
+        Pivot == (Droite+Gauche) // 2
+        if valeur < liste[Pivot]:
+            Droite = Pivot - 1
+        elif valeur > liste[Pivot - 1]:
+            Gauche = Pivot + 1
+        else:
+            trouve = True 
