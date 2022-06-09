@@ -1,0 +1,41 @@
+def afficher_grille(grille):
+    '''Description : Fonction qui affiche la grille du jeu à l'envers.
+    case vide = 0, pion rouge = 1, pion jaune=2.
+    Les numéros de colonne de 1 à 7 doivent apparaître en dessous de la grille.
+    grille (lst) = la liste des listes représentant la grille du jeu
+    return (None)
+    '''
+    for k in range(6):
+        print(grille[5-k])
+    print(' 0  1  2  3  4  5  6 ')
+    print(21*'_')
+
+    
+def générer_grille():
+    grille = [[0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0],[0, 0, 0, 0, 0, 0, 0]]
+    return grille
+    
+def jouer(grille, joueur):
+    '''
+    Description : Teste si la colonne n'est pas pleine et renvoie
+    la ligne et la colonne du joueur.
+    grille (lst) : liste de liste représentant la grille
+        Effet de bord : la grille est modifiée dans cette fonction
+    joueur (int) : 1 si le joueur est le numéro 1, 2 si le joueur 2
+    return position(tuple): donne le numéro de ligne et le numéro de colonne. 
+    '''
+def grille_pleine(grille):
+    g_complet = True
+    for k in grille:
+        for valeur in k:
+            if valeur == 0:
+                g_complet = False
+                break
+        return g_complet
+        
+ def vider_grille(Jeu):
+    i = int()
+    j = int()
+    for i in range(Nb_lignes + 2):
+        for j in range(Nb_colonnes + 2):
+            Jeu.grille[i][j] = vide       
