@@ -112,3 +112,27 @@ def puissance_v2(x, n):
         return x * puissance(x * x,(n))
     
 #Exo 6
+
+#Q3, 4, 5
+    
+def pgcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return pgcd(b, a % b)
+    
+#####pgcd(2562, 78)
+    
+#Exo 7.1 + 7.2
+#7.1 Q1, 2, 3 
+#7.2 Q1, 2, 3, 4
+
+def nombre_de_chiffre(x):
+    assert x >= 0, "x doit être positif"
+    if x < 10:
+        return 1
+    else:
+        return 1 + nombre_de_chiffre(x // 10)
+    
+#####nombre_de_chiffre(34639)
+
