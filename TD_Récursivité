@@ -1,0 +1,114 @@
+def somme_recursif(n):
+    assert n >= 0,"impossible de calculer cette somme"
+    if n == 0 :
+        return 0
+    else : 
+        return n + somme_recursif(n-1)
+
+#####somme_recursif(100)
+
+#Exo 1
+
+def somme_iteratif(sum):
+    assert sum >= 0,"impossible de calculer cette somme"
+    compteur = sum
+    while sum != 0:
+        sum = sum - 1
+        compteur = compteur + sum
+    return compteur
+
+#####somme_iteratif(100)
+
+##Autre manière plus facile pour faire cet exo
+
+def somme_iteratif_1(sum):
+    assert sum >= 0,"impossible de calculer cette somme"
+    somme = 0
+    for i in range(sum+1):
+        somme = somme + i
+    return somme
+        
+#####somme_iteratif_1(100)
+
+#Exo 2
+
+def prems():
+    print("un très mauvais exemple")
+    prems()
+    
+def prems(n):
+    if n != 0:
+        print("un très mauvais exemple")
+        prems(n-1)
+    else :
+        return n
+
+#####prems(5)
+    
+#Exo 3
+#Q2
+    
+def factorielle(n):
+    assert n >= 0, "impossible de calculer ce produit"
+    assert type (n) == int, "impossible car n n'est pas un entier"
+    if n == 0:
+        return 1
+    else:
+        return n * factorielle(n-1)
+    
+#####factorielle(7)
+    
+#Exo 4
+#Q1, 2
+    
+def fonctionUn(n):
+    if n == 1 :
+       return 1
+    else : 
+     return n + fonctionUn(n+1)
+    
+#####fonctionUn(5)
+        
+#Q3, 4, 5, 6
+    
+def fonctionDeux(n):
+    if n == 0 :
+        return 1
+    else :
+        return n + fonctionDeux(n-2)
+    
+#####fonctionDeux(5)
+    
+#Q7
+    
+def mystere(n,p):
+    """
+    n et p sont deux entiers naturels
+    """
+    if p == 0 :
+        return 0
+    else :
+        n + mystere(n, p-1)
+
+print(mystere(3,6))
+
+#Exo 5
+#Q1
+
+def puissance(x, n):
+    if n == 0:
+        return 1
+    else:
+        return x * puissance(n, n-1)
+    
+#Q2, 3a, 3b
+    
+def puissance_v2(x, n):
+    if n == 0:
+        return 1
+    elif: n % 2 == 0:
+        return puissance(x * x, n//2)
+    else:
+        return x * puissance(x * x,(n))
+    
+#Exo 6
