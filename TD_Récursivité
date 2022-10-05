@@ -81,16 +81,16 @@ def fonctionDeux(n):
     
 #Q7
     
-def mystere(n,p):
-    """
-    n et p sont deux entiers naturels
-    """
-    if p == 0 :
-        return 0
-    else :
-        n + mystere(n, p-1)
-
-print(mystere(3,6))
+##def mystere(n,p):
+##     """
+##     n et p sont deux entiers naturels
+##     """
+##     if p == 0 :
+##         return 0
+##     else :
+##         n + mystere(n, p-1)
+##
+##print(mystere(3,6))
 
 #Exo 5
 #Q1
@@ -106,7 +106,7 @@ def puissance(x, n):
 def puissance_v2(x, n):
     if n == 0:
         return 1
-    elif: n % 2 == 0:
+    elif n % 2 == 0:
         return puissance(x * x, n//2)
     else:
         return x * puissance(x * x,(n))
