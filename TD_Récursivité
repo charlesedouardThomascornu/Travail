@@ -131,7 +131,9 @@ def nombre_de_chiffre(x):
     if x < 10:
         return 1
     else:
-        return 1 + nombre_de_chiffre(x // 10)
+        resultat == 1 + nombre_de_chiffre(x // 10)
+        assert resultat == len(str(x))
+        return resultat
     
 #####nombre_de_chiffre(34639)
 
