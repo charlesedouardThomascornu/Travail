@@ -112,7 +112,6 @@ def puissance_v2(x, n):
         return x * puissance(x * x,(n))
     
 #Exo 6
-
 #Q3, 4, 5
     
 def pgcd(a, b):
