@@ -1,0 +1,53 @@
+from turtle import forward, right, left, penup, pendown, circle
+import turtle
+##turtle.forward(100)
+##turtle.right(90)
+##turtle.forward(300)
+##turtle.right(90)
+##turtle.forward(100)
+##turtle.right(90)
+##turtle.forward(300)
+##turtle.penup()
+##turtle.forward(70)
+##turtle.pendown()
+##turtle.circle(-50)
+
+def dessin(longueur1, longueur2, rayon):
+    for i in range(2):
+        turtle.forward(longueur1)
+        turtle.left(90)
+        turtle.forward(longueur2)
+        turtle.left(90)
+    turtle.penup()
+    turtle.left(90)
+    turtle.forward(longueur1+longueur2)
+    turtle.right(90)
+    turtle.forward(longueur1/2)
+    turtle.pendown()
+    turtle.circle(rayon)
+        
+import turtle
+
+#Exo 1
+
+##def dessine(n):
+##    if n > 0:
+##        turtle.forward(n)
+##        turtle.right(90)        
+##        dessine(n-2)
+        
+##dessine(20)
+
+#Q3
+
+def dessine2(n):
+    compteur = n
+    if n == 0:
+        return None
+    else :
+        turtle.forward(n)
+        turtle.right(90)
+        dessine2(n - 10)
+    
+
+##dessine2(20)
