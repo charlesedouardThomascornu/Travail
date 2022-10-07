@@ -134,6 +134,22 @@ def nombre_de_chiffre(x):
         resultat == 1 + nombre_de_chiffre(x // 10)
         assert resultat == len(str(x))
         return resultat
-    
+        
 #####nombre_de_chiffre(34639)
+        
+#Exo 8
+
+ma_liste = ['foo', 'bar', 'spam', 'ham', 'eggs']
+        
+def appartient(v, t, i):
+    if i >= len(t) - 1:
+        return False
+    elif t[i] == v:
+        return True
+    else:
+        return appartient(v, t, i + 1)
+    
+#####appartient('spam', ma_liste, 1)
+#####appartient('spam', ma_liste, 2)
+#####appartient('eggs', ma_liste, 3)
 
