@@ -30,11 +30,11 @@ import turtle
 
 #Exo 1
 
-##def dessine(n):
-##    if n > 0:
-##        turtle.forward(n)
-##        turtle.right(90)        
-##        dessine(n-2)
+def dessine(n):
+   if n > 0:
+       turtle.forward(n)
+       turtle.right(90)        
+       dessine(n-2)
         
 ##dessine(20)
 
@@ -47,7 +47,52 @@ def dessine2(n):
     else :
         turtle.forward(n)
         turtle.right(90)
-        dessine2(n - 10)
+        dessine2(n - 2)
     
 
 ##dessine2(20)
+        
+#Q4
+        
+def dessine2_V2(n):
+    compteur = n
+    if n == 0:
+        return None
+    else :
+        turtle.forward(n)
+        turtle.right(90)
+        dessine2(n - 10)
+        
+#Q5.a
+        
+def dessine3(n):
+    while n > 0:
+        turtle.forward(n)
+        turtle.right(90)
+        n = n - 2
+
+#Q6
+        
+def dessine_compteur(n):
+    compteur = n // 10+1
+    print (compteur)
+    dessine3(n)
+
+#dessine_compteur(500)
+    
+#Exo 2
+    
+def VonKoch(n, l):
+    turtle.speed(0)
+    if n == 0:
+        turtle.forward(l)
+    else:
+        VonKoch(n-1, l//3)
+        turtle.left(60)
+        VonKoch(n-1, l//3)
+        turtle.right(120)
+        VonKoch(n-1, l//3)
+        turtle.left(60)
+        VonKoch(n-1, l//3)
+   
+#VonKoch(5, 1000)
