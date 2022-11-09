@@ -8,13 +8,13 @@ class Eleve:
         self.note = note
 #Q5
 
-    def a_la_moyenne(self,note):
-        if note >= 10:
+    def a_la_moyenne(self):
+        if self.note >= 10:
             return True
         else:
             return False
 
-#eleve1.a_la_moyenne(eleve1.note)
+#eleve1.a_la_moyenne()
 
 #Q2
         
