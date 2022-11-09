@@ -1,0 +1,39 @@
+#Exo 1
+#Q1
+
+class Eleve:
+    def __init__(self, nom, classe, note):
+        self.nom = nom
+        self.classe = classe
+        self.note = note
+#Q5
+
+    def a_la_moyenne(self,note):
+        if note >= 10:
+            return True
+        else:
+            return False
+
+#eleve1.a_la_moyenne(eleve1.note)
+
+#Q2
+        
+eleve1 = Eleve("Charles-Edouard", "TG3", 15)
+eleve2 = Eleve("Alexis", "TG3", 14)
+eleve3 = Eleve("Pierre", "TG3", 16)
+eleve4 = Eleve("Yanis", "TG3", 14)
+
+#Q3, 4
+
+def compare(eleve_1, eleve_2):
+    if eleve_1.note > eleve_2.note:
+        return eleve_1.nom
+    elif eleve_2.note > eleve_1.note:
+        return eleve_2.nom
+    else:
+        return (eleve_1.nom, eleve_2.nom)
+
+compare(eleve1, eleve2)
+
+#Exo 2
+#Q1
