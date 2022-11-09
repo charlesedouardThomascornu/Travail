@@ -37,3 +37,24 @@ compare(eleve1, eleve2)
 
 #Exo 2
 #Q1
+
+class TriangleRectangle:
+    def __init__(self, cote1, cote2, hypothenuse):
+        self.cote1 = cote1
+        self.cote2 = cote2
+        self.hypothenuse = hypothenuse
+        
+        
+    def constructeur(self):
+        if self.cote1**2 + self.cote2**2 == self.hypothenuse**2:
+            return True
+        else:
+            return False
+
+#Q2
+        
+triangle1 = TriangleRectangle(6, 8, 10)
+triangle2 = TriangleRectangle(4, 6, 8)
+
+#Exo 3
+#Q1
