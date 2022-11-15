@@ -58,3 +58,44 @@ triangle2 = TriangleRectangle(4, 6, 8)
 
 #Exo 3
 #Q1
+
+from math import sqrt
+
+#Exo 4, Q1
+class Point:
+    def __init__(self, abscisse, ordonnee):
+        """
+        créer un point
+        x = abscisse
+        y = ordonnée
+        """
+        self.x = abscisse
+        self.y = ordonnee
+        
+#Q2       
+    def distance(self):
+        """
+        calcul la distance à l'origine du repère
+        """
+        return(sqrt(self.x**2 + self.y**2))
+        
+#Q3       
+    def __repr__(self):
+        """
+        on utilise __repr__ lorsqu'on souhaite afficher un objet
+        """
+        return self.x + " et " + self.y + " représente les coordonnées du point " + sqrt(self.x**2 + self.y**2)
+            
+#Q4
+A = Point(-2, 5)
+B = Point(5, 5)
+C = Point(-2, -2)
+D = Point(5, -2)
+
+#Q5
+def longueur_segment(l1, l2):
+    return(sqrt((l1.x - l2.x)**2 + (l1.y - l2.y)**2))
+
+#Q6
+longueur_segment(A, B)
+longueur_segment(C, D)
