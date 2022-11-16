@@ -93,6 +93,9 @@ D = Point(5, -2)
 
 #Q5
 def longueur_segment(a, b):
+    """
+    renvoie la distance ( de AB par exemple )
+    """
     return(sqrt((a.x - b.x)**2 + (a.y - b.y)**2))
 
 #Q6
