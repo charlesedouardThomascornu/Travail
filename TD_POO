@@ -79,11 +79,11 @@ class Point:
         return(sqrt(self.x**2 + self.y**2))
         
 #Q3       
-    #def __repr__(self):
-        #"""
-        #on utilise __repr__ lorsqu'on souhaite afficher un objet
-        #"""
-        #return "(" + str(self.x) + ", " + str(self.y) + ")"
+    def __repr__(self):
+        """
+        on utilise __repr__ lorsqu'on souhaite afficher un objet
+        """
+        return "(" + str(self.x) + ", " + str(self.y) + ")"
             
 #Q4
 A = Point(-2, 5)
