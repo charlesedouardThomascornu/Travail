@@ -101,3 +101,28 @@ def longueur_segment(a, b):
 #Q6
 longueur_segment(A, B)
 longueur_segment(C, D)
+
+#Exo 5, Q1
+class Fraction:
+    def __init__(self, numerateur, denominateur):
+        self.num = numerateur
+        self.denom = denominateur
+
+#Q2
+    def __repr__(self):
+        if self.denom == 1:
+            return str(self.num)
+        else:
+            return str(self.num) + " / " + str(self.denom)
+#Q3
+    def __eq__(self, f2):
+        return self.num * f2.denom == self.denom * f2.num
+    
+    def __lt__(self, f2):
+        if self.num / self.denom < f2.num / f2.denom:
+            return True
+        else:
+            return False
+        
+#Q4
+    def __add__(self, f2):
