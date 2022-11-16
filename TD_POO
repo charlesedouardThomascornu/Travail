@@ -83,7 +83,7 @@ class Point:
         #"""
         #on utilise __repr__ lorsqu'on souhaite afficher un objet
         #"""
-        #return str(self.x) + " et " + str(self.y) + " représente les coordonnées du point " + str(self.distance)
+        #return "(" + str(self.x) + ", " + str(self.y) + ")"
             
 #Q4
 A = Point(-2, 5)
