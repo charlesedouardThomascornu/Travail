@@ -35,6 +35,9 @@ def compare(eleve_1, eleve_2):
 
 compare(eleve1, eleve2)
 
+
+
+
 #Exo 2
 #Q1
 
@@ -59,6 +62,9 @@ triangle2 = TriangleRectangle(4, 6, 8)
 
 
 from math import sqrt
+
+
+
 
 #Exo 4, Q1
 class Point:
@@ -102,11 +108,26 @@ def longueur_segment(a, b):
 longueur_segment(A, B)
 longueur_segment(C, D)
 
-#Exo 5, Q1
+
+
+
+#Exo 5, Q1 + Deuxième partie, Q1, Q2
+def pgcd(a, b):
+    if b != 0:
+        r = a % b
+        return pgcd(b, r)
+    else:
+        return a
+
 class Fraction:
     def __init__(self, numerateur, denominateur):
-        self.num = numerateur
-        self.denom = denominateur
+        pgcd2 = pgcd(numerateur, denominateur)
+        self.num = numerateur / pgcd2
+        self.denom = denominateur / pgcd2
+        
+    def red(self):
+        pgcd2 = pgcd(self.num, self.denom)
+        return Fraction(int(self.num / pgcd2), int(self.denom / pgcd2))
 
 #Q2
     def __repr__(self):
@@ -126,3 +147,15 @@ class Fraction:
         
 #Q4
     def __add__(self, f2):
+        n = self.num * f2.denom + f2.num * self.denom
+        d = self.denom * f2.denom
+        return Fraction(n, d)
+    
+    def __mul__(self, d2):
+        n = self.num * f2.num
+        d = self.denom * f2.denom
+        return Fraction(n, d)
+
+#Q5
+f1 = Fraction(1, 5)
+f2 = Fraction(1, 2)
