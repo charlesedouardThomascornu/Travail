@@ -1,0 +1,83 @@
+from ma_pile import creer_pile, est_vide, empiler, depiler, afficher_pile
+
+#Exo 1, Q1
+
+p1 = creer_pile()
+
+for i in range(6):
+    empiler(p1, i)
+    
+##afficher_pile(p1)
+
+#Q2
+
+p2 = creer_pile()
+
+for i in "Python":
+    empiler(p2, i)
+
+##if not est_vide(p2):
+##    x = depiler(p2)
+##    
+##if not est_vide(p2):
+##    y = depiler(p2)
+    
+##afficher_pile(p2)
+##print("x vaut", x, "et y vaut", y)
+
+#Q3
+
+p3 = creer_pile()
+    
+def pile_alternee(n):
+    
+    for x in range(n + 1):
+        if x % 2 != 0:
+            empiler(p3, -x)
+        else:
+            empiler(p3, x)
+    
+afficher_pile(p3)
+
+#Exo 2, Q1
+
+def vider_pile(pile):
+    while not est_vide(pile):
+        depiler(pile)
+        
+#Q2
+
+def sommet_pile(pile):
+    if not est_vide(pile):
+        sommet = depiler(pile)
+        empiler(pile, sommet)
+    print("le sommet de la pile vaut", sommet)
+    if est_vide(pile):
+        return None
+   
+#Q3
+    
+##def taille_pile(pile):
+##    compteur = 0
+##    while not est_vide(pile):         # cette fonction en fonctionne que pour les piles avec des nombres 
+##        taille = depiler(pile)
+##        compteur = compteur + 1
+##    for e in range(compteur):
+##        empiler(pile, e)
+##    print("la taille de la pile vaut", compteur)
+        
+#taille_pile(p1)
+    
+def taille_pile(pile):
+    pile_de_stockage = creer_pile()
+    compteur = 0                                    # celle-ci fonctionne pour les piles avec des nombres, mais aussi des chaînes de caractères 
+    while not est_vide(pile):
+        empiler(pile_de_stockage, depiler(pile))
+        compteur = compteur + 1
+    while not est_vide(pile_de_stockage):
+        empiler(pile, depiler(pile_de_stockage))
+    print("la taille de a pile vaut", compteur) 
+
+#Q4
+
+def inverser_pile(pile):
