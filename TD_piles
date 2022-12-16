@@ -81,3 +81,48 @@ def taille_pile(pile):
 #Q4
 
 def inverser_pile(pile):
+
+
+
+
+
+
+
+
+
+
+#Exo 4, Partie 1
+
+def separer_expression(chaine):
+    return(chaine.split(" "))
+              
+separer_expression("3 5 + 4 2 - *")
+
+#Q2
+
+def est_operateur(c):
+        if c == '+' or c == '*' or c == '/' or c == '-':
+            return True
+        else:
+            return False
+    
+est_operateur("3")
+est_operateur("+")
+est_operateur("3+5")
+
+#Partie 2
+
+def evaluer_postfixee(chaine):
+    p = creer_pile()
+    liste = separer_expression(chaine)
+    for e in liste:
+        if not est_operateur(e):
+            empiler(p, e)
+        else:
+            chiffre2 = depiler(p)
+            chiffre1 = depiler(p)
+            resultat = str(eval(chiffre1 + e + chiffre2))
+            empiler(p, resultat)
+    return int(depiler(p))
+
+evaluer_postfixee("3 5 4 2 + - *")
