@@ -1,0 +1,55 @@
+#Exo 1
+
+fiche_informaticien = {"Prenom":"Alan","Nom":"Turing","Passion":"Casser des codes","Age":107,
+                       "Date de naissance":"23/06/1912" }
+
+#Exo 2
+
+Velos = {'typ':'électrique', 'id':1210, 'station':'Italie', 'statut':'en panne'}
+
+#Q3)
+
+'dispo' in Velos.values()
+
+
+
+#Exo 2bis, Q1)
+
+velo1 = {'typ':'électrique', 'id':1211, 'station':'Italie', 'statut':'dispo'}
+velo2 = {'typ':'classique', 'id':1212, 'station':'France', 'statut':'en déplacement'}
+velo3 = {'typ':'électrique', 'id':1213, 'station':'Allemagne', 'statut':'dispo'}
+
+#Q2)
+
+parc_velib = []
+parc_velib.append(velo1)
+parc_velib.append(velo2)
+parc_velib.append(velo3)
+
+#Q3)
+
+def recherche_velo(velo):
+    for velos in velo:
+        if 'dispo' in velos.values():
+            return True
+    else:
+        return False
+    
+recherche_velo(parc_velib)
+
+#Q4)
+
+def recherche_velo1(parc_velib):
+    t = ()
+    for velo in parc_velib:
+        if velo['statut'] == 'dispo':
+            t = t + (velo['station'],)
+    if t == ():
+        return None
+    else:
+        return t
+    
+recherche_velo1(parc_velib)
+
+#Exo 3
+
