@@ -49,7 +49,7 @@ class Arbre:
             return False
         elif self.racine.droit == None and self.racine.gauche == None:
             return True
-        elif self.racine.droit == None or self.racine.droit == None:
+        elif self.racine.droit != None or self.racine.droit != None:
             return False 
 
 
