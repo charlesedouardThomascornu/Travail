@@ -1,0 +1,63 @@
+"""
+Q1) La cryptographie permet de crypter des messages pour les rendre plus sécuriser, pour protéger les auteurs et pour éviter qu'ils ne soient piraté trop facilement
+
+Q2) CHIFFREMENT : La cryptographie permet de crypter des messages pour les rendre plus sécuriser, pour protéger les auteurs et pour éviter qu'ils ne soient piraté trop facilement.
+DECHIFFREMENT : Action de déchiffrer un texte, une écriture, un message codé, etc. ; fait d'être déchiffré.
+CLE CRYPTOGRAPHIQUE : Une clé cryptographique est une chaîne de caractères utilisée dans un algorithme de chiffrement pour modifier des données afin qu'elles ressemblent à des données aléatoires.
+
+Q3)
+                                    CHIFFREMENT                                                       DÉCHIFFREMENT
+                                        | |                                                               | |
+                                        | |                                                               | |
+             Alice ----------------> chiffré -----------------------> INTERNET ----------------------> déchiffré --------------> Bob
+                                                                         |
+                                                                         |
+                                                                         |
+                                                                         [ Je ne comprend rien car le message est chiffré.
+                                                                           Il me faudrait la clé. ]
+"""
+
+# Q4)
+
+def chiffrementCesar(message, cle):
+    """
+    Description : Chiffre un message en utilisant le codage de Cesar
+    message (str) : message à chiffrer
+    cle (int) : décalage utilisé
+    précondition : message n'est composé uniquement que des lettres majuscules
+    return (str) : message chiffré
+    """
+    # Vérification de la précondition
+    res = True
+    for c in message:
+        if ord(c) < 65 and ord(c) > 90:
+            res = False
+    assert res == True
+    # Code à compléter
+    chiff = ''
+    for x in message:
+        chiff = chiff + chr(ord(x) + cle)
+    return chiff
+
+
+
+
+def dechiffrementCesar(message, cle):
+    """
+    Description : Déchiffre un message en utilisant le codage de Cesar
+    message (str) : message à déchiffrer
+    cle (int) : décalage utilisé
+    précondition : message n'est composé uniquement que des lettres majuscules
+    return (str) : message déchiffré
+    """
+    # Vérification de la précondition
+    res = True
+    for c in message:
+        if ord(c) < 65 and ord(c) > 90:
+            res = False
+    assert res == True
+    # Code à compléter
+    dech = ''
+    for x in message:
+        dech = dech + chr(ord(x) - cle)
+    return dech
