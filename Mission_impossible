@@ -1,0 +1,40 @@
+fichier = "ordre_de_mission_chiffre.mp3"
+cle = "cle.mp3"
+
+def lire_fichier(fichier):
+    fichier = open(fichier, "rb")
+    fichier.close()
+    return fichier
+
+def dechiffrement(fichier, cle, fichier_sortie):
+    fichier_lu = lire_fichier(fichier)
+    cle_chiffre = open(cle, "rb").read()
+    fichier_dechiffre = open(fichier_sortie, "ab")
+    bytes_e = []
+    bytes_k = []
+    for e in fichier_lu:
+        bytes_e.append(e)
+    for k in cle_chiffre:
+        bytes_k.append(e)
+    for i in range(len(bytes_e)):
+        octet_dechiffre = (int.from_bytes(bytes_e[i], byteorder = 'big') ^ int.from_bytes(bytes_k[i], byteorder = 'big')).to_bytes(length = 1, byteorder = 'big', signed = False)
+        fichier_dechiffre.write(octet_dechiffre)
+    return fichier_dechiffre
+    
+byte_list = []
+
+with open("/home/tvdm/Documents/Projet_mission_impossible/cle.mp3", "rb") as fichier:
+    octet = fichier.read(1)
+    while octet != b'':
+        byte_list.append(octet)
+        octet = fichier.read(1)
+        
+byte_list2 = []
+
+with open("/home/tvdm/Documents/Projet_mission_impossible/ordre_de_mission_chiffre.mp3", "rb") as fichier2:
+    octet2 = fichier2.read(1)
+    while octet2 != b'':
+        byte_list2.append(octet2)
+        octet2 = fichier2.read(1)
+        
+        
