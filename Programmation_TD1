@@ -1,0 +1,98 @@
+def repetition(mot, n):
+    """à_remplacer_par_ce_que_fait_la_fonction
+
+    Précondition : 
+    Exemple(s) :
+    $$$ 
+
+    """
+    return mot * n
+    
+#repetition('la', 3)
+#repetition('go', 0)
+
+def moyenne_entiere(a, b):
+    """à_remplacer_par_ce_que_fait_la_fonction
+
+    Précondition : 
+    Exemple(s) :
+    $$$ 
+
+    """
+    moyenne = a + b
+    return moyenne // 2
+
+#moyenne_entiere(10, 20)
+#moyenne_entiere(10, 15)
+
+def moyenne_entiere_ponderee(note1, coeff1, note2, coeff2):
+    """à_remplacer_par_ce_que_fait_la_fonction
+
+    Précondition : 
+    Exemple(s) :
+    $$$ 
+
+    """
+    coefficient = coeff1 + coeff2
+    moyenne1 = note1 * coeff1
+    moyenne2 = note2 * coeff2
+    return (moyenne1 + moyenne2) // coefficient
+#moyenne_entiere_ponderee(10, 2, 20, 3)
+
+def moyenne_entière2(a1, b1):
+    """à_remplacer_par_ce_que_fait_la_fonction
+
+    Précondition : 
+    Exemple(s) :
+    $$$ 
+
+    """
+    return moyenne_entiere_ponderee(a1, 1, b1, 1)
+moyenne_entière2(10, 20)
+    
+def heure2minutes(heures):
+    """à_remplacer_par_ce_que_fait_la_fonction
+
+    Précondition : 
+    Exemple(s) :
+    $$$ 
+
+    """
+    return heures * 60
+#heure2minutes(2)
+
+def jour2heures(jours):
+    """à_remplacer_par_ce_que_fait_la_fonction
+
+    Précondition : 
+    Exemple(s) :
+    $$$ 
+
+    """
+    return jours * 24
+#jour2heures(3)
+
+def en_minutes(jour, heure, minute):
+    """à_remplacer_par_ce_que_fait_la_fonction
+
+    Précondition : 
+    Exemple(s) :
+    $$$ 
+
+    """
+    jour1 = jour2heures(jour) * 60
+    heure1 = heure2minutes(heure)
+    return jour1 + heure1 + minute
+#en_minutes(1, 2, 3)
+
+def salutation(chaine, prenom, nom, nb):
+    """à_remplacer_par_ce_que_fait_la_fonction
+
+    Précondition : 
+    Exemple(s) :
+    $$$ 
+
+    """
+    return chaine +' ' + "je m'appelle"+ ' ' + prenom + ' ' +  nom + '!'*nb
+salutation("Salut", "Camille", "DUPONT", 4)
+    
